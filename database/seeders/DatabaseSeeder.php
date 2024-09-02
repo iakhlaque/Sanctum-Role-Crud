@@ -12,6 +12,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        //Example Together
+        $this->call([
+            UserSeeder::class,
+            PostSeeder::class,
+        ]);
+
+        // Individual
+        // $this->call(PostSeeder::class);
+
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
